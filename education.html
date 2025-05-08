@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surendra Mahara - Mechanical Design Engineer</title>
+    <meta name="description"
+        content="Portfolio of Surendra Mahara, a Gold Medalist Mechanical Engineer specializing in CAD, product development, and design.">
+    <meta name="keywords"
+        content="mechanical engineer, CAD designer, SolidWorks, AutoCAD, Inventor, product development">
+
+    <meta property="og:title" content="Surendra Mahara - Mechanical Design Engineer">
+    <meta property="og:description"
+        content="Explore the portfolio of Surendra Mahara, expert in CAD modeling, product design, and mechanical systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://surendramahara.com.np">
+    <meta property="og:image" content="https://surendramahara.com.np/images/og-image.jpg">
+    <link rel="canonical" href="https://surendramahara.com.np">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            100: '#DBEAFE', // Light blue for backgrounds
+                            400: '#60A5FA', // Medium blue for accents
+                            500: '#3B82F6', // Primary blue for icons/buttons
+                            600: '#2563EB', // Darker blue for hover
+                        },
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        .reveal-section {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: reveal 0.6s ease forwards;
+        }
+        .reveal-item {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: reveal 0.6s ease forwards;
+        }
+        .reveal-item:nth-child(1) { animation-delay: 0.2s; }
+        .reveal-item:nth-child(2) { animation-delay: 0.4s; }
+        .reveal-item:nth-child(3) { animation-delay: 0.6s; }
+        @keyframes reveal {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+    <header class="fixed w-full bg-white dark:bg-gray-900 shadow-sm z-40 transition-colors duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-xl font-bold text-blue-600 dark:text-blue-400 flex items-center gap-2">
+                    <span>Surendra Mahara</span>
+                </a>
+                <div class="flex items-center gap-4">
+                    <nav class="hidden md:flex items-center space-x-5">
+                        <a href="index.html" class="nav-link " aria-current="page">Home</a>
+                        <a href="experience.html" class="nav-link">Experience</a>
+                        <a href="education.html" class="nav-link education">Education</a>
+                        <a href="skills.html" class="nav-link">Skills</a>
+                        <a href="projects.html" class="nav-link ">Projects</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </nav>
+                    <button id="darkModeToggle"
+                        class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        aria-label="Toggle dark mode">
+                        <i class="fa-solid fa-sun hidden text-xl" id="icon-sun"></i>
+                        <i class="fa-solid fa-moon text-xl" id="icon-moon"></i>
+                    </button>
+                    <button id="mobileMenuButton"
+                        class="md:hidden p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        aria-label="Open menu">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden py-6 px-4">
+                <nav class="flex flex-col space-y-3">
+                    <a href="index.html" class="nav-link" aria-current="page">Home</a>
+                    <a href="experience.html" class="nav-link">Experience</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="skills.html" class="nav-link">Skills</a>
+                    <a href="projects.html" class="nav-link active">Projects</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Education Section -->
+        <section id="education" class="py-20 bg-gray-100 dark:bg-gray-800 transition-colors duration-300">
+            <div class="container mt-8 mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold mb-16 text-center text-gray-900 dark:text-white reveal-section">
+                    Education
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Education Item 1 -->
+                    <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 reveal-item">
+                        <div class="flex items-center mb-4">
+                            <div class="rounded-full bg-primary-500 p-3 mr-4">
+                                <i class="fa-solid fa-graduation-cap h-6 w-6 text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">B.Tech in Mechanical Engineering</h3>
+                        </div>
+                        <p class="text-gray-500 dark:text-gray-400 mb-3 font-medium">RK University, Rajkot, Gujarat (2019–2023)</p>
+                        <div class="flex items-center bg-amber-100 dark:bg-amber-900 text-amber-600 dark:text-amber-300 rounded-full px-3 py-1 mb-4 w-fit">
+                            <i class="fa-solid fa-medal h-5 w-5 mr-2"></i>
+                            <span class="font-medium">Gold Medalist</span>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Graduated with top honors, specializing in CAD, product design, and manufacturing processes. Completed projects in SolidWorks and AutoCAD, focusing on innovative mechanical systems.
+                        </p>
+                        <ul class="text-gray-600 dark:text-gray-300 list-disc list-inside text-sm">
+                            <li>Relevant Coursework: Machine Design, Thermodynamics, Fluid Mechanics, CAD/CAM</li>
+                            <li>Capstone Project: Designed a high-efficiency food processing machine, increasing throughput by 18%</li>
+                            <li>Extracurricular: Led the university’s Robotics Club, organizing national-level competitions</li>
+                        </ul>
+                    </div>
+
+                    <!-- Education Item 2 -->
+                    <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 reveal-item">
+                        <div class="flex items-center mb-4">
+                            <div class="rounded-full bg-primary-500 p-3 mr-4">
+                                <i class="fa-solid fa-school h-6 w-6 text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Higher Secondary Education</h3>
+                        </div>
+                        <p class="text-gray-500 dark:text-gray-400 mb-3 font-medium">Sagarmatha Multiple College, Nepal (2017–2019)</p>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Excelled in Science stream with a focus on Physics, Chemistry, and Mathematics, preparing a strong foundation for engineering studies.
+                        </p>
+                        <ul class="text-gray-600 dark:text-gray-300 list-disc list-inside text-sm">
+                            <li>Achieved top 10% ranking in national board exams</li>
+                            <li>Participated in regional science fairs, winning awards for innovative physics projects</li>
+                            <li>Active member of the Math Club, mentoring peers in advanced calculus</li>
+                        </ul>
+                    </div>
+
+                    <!-- Education Item 3 -->
+                    <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 reveal-item">
+                        <div class="flex items-center mb-4">
+                            <div class="rounded-full bg-primary-500 p-3 mr-4">
+                                <i class="fa-solid fa-book-open h-6 w-6 text-white"></i>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Secondary School Education</h3>
+                        </div>
+                        <p class="text-gray-500 dark:text-gray-400 mb-3 font-medium">Pushpanjali English Boarding School, Nepal (2007–2017)</p>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4">
+                            Built a robust academic foundation with excellence in Mathematics, Science, and English, complemented by leadership in extracurricular activities.
+                        </p>
+                        <ul class="text-gray-600 dark:text-gray-300 list-disc list-inside text-sm">
+                            <li>Consistently ranked in the top 5% of the class</li>
+                            <li>Led school’s Science Olympiad team to regional championships</li>
+                            <li>Served as class representative, organizing school-wide events</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Enhanced Footer -->
+    <footer class="bg-gray-900 dark:bg-gray-950 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+
+                <!-- Branding -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-2 text-blue-400">Surendra Mahara</h3>
+                    <p class="text-gray-400 mb-4">Gold Medalist Mechanical Design Engineer</p>
+                    <div class="flex items-center space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-500 transition" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="mailto:youremail@example.com" class="text-gray-400 hover:text-blue-500 transition"
+                            aria-label="Email">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                                              <!-- <a href="#" class="text-gray-400 hover:text-blue-500 transition" aria-label="GitHub">
+                            <i class="fab fa-github text-xl"></i>
+                        </a> -->
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-3 text-blue-400">Navigation</h4>
+                    <ul class="grid grid-cols-2 gap-2">
+                        <li><a href="index.html" class="hover:text-blue-500 transition">Home</a></li>
+                        <li><a href="experience.html" class="hover:text-blue-500 transition">Experience</a></li>
+                        <li><a href="education.html" class="hover:text-blue-500 transition">Education</a></li>
+                        <li><a href="skills.html" class="hover:text-blue-500 transition">Skills</a></li>
+                        <li><a href="projects.html" class="hover:text-blue-500 transition">Projects</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-500 transition">Contact</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- Quick Contact -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-3 text-blue-400">Get In Touch</h4>
+                    <p class="text-gray-400 mb-2 flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt text-blue-400"></i>
+                        Gujrat, India
+                    </p>
+                    <p class="text-gray-400 mb-2 flex items-center gap-2">
+                        <i class="fas fa-envelope text-blue-400"></i>
+                        <a href="mailto:surenmahara2020@gmail.com"
+                            class="hover:text-blue-500 transition">surenmahara2020@gmail.com</a>
+                    </p>
+                    <p class="text-gray-400 flex items-center gap-2">
+                        <i class="fas fa-phone text-blue-400"></i>
+                        +977 9842394898
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="mt-12 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+                <p>© <span id="year"></span> Surendra Mahara. All rights reserved.</p>
+                <p class="mt-2 text-gray-400">
+                    Powered by
+                    <a href="https://danmahara.com.np" target="_blank"
+                        class="animated-underline text-blue-400 hover:text-blue-400 transition-colors duration-300">
+                        Dan Mahara
+                    </a>
+                </p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <script>
+        const htmlElement = document.documentElement;
+        const toggleBtn = document.getElementById('darkModeToggle');
+        const iconSun = document.getElementById('icon-sun');
+        const iconMoon = document.getElementById('icon-moon');
+
+        // Update icons based on mode
+        function updateIcons() {
+            const isDark = htmlElement.classList.contains('dark');
+            iconSun.classList.toggle('hidden', !isDark);
+            iconMoon.classList.toggle('hidden', isDark);
+        }
+
+        // Toggle dark mode
+        function toggleDarkMode() {
+            htmlElement.classList.toggle('dark');
+            const isDark = htmlElement.classList.contains('dark');
+            localStorage.setItem('darkMode', isDark);
+            updateIcons();
+        }
+
+        // Init dark mode on page load
+        function initDarkMode() {
+            const savedMode = localStorage.getItem('darkMode');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedMode === 'true' || (savedMode === null && prefersDark)) {
+                htmlElement.classList.add('dark');
+            }
+            updateIcons();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initDarkMode();
+            toggleBtn.addEventListener('click', toggleDarkMode);
+
+            // Mobile Menu Handling
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            // Toggle mobile menu visibility on click
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+                mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+            });
+
+            // Close mobile menu when clicking on a link
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                });
+            });
+        });
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPath = window.location.pathname.split("/").pop(); // Get the current file name
+            const navLinks = document.querySelectorAll(".nav-link");
+    
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute("href");
+                if (linkPath === currentPath || (currentPath === "" && linkPath === "index.html")) {
+                    link.classList.add("active");
+                    link.setAttribute("aria-current", "page");
+                } else {
+                    link.classList.remove("active");
+                    link.removeAttribute("aria-current");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

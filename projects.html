@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surendra Mahara - Mechanical Design Engineer</title>
+    <meta name="description"
+        content="Portfolio of Surendra Mahara, a Gold Medalist Mechanical Engineer specializing in CAD, product development, and design.">
+    <meta name="keywords"
+        content="mechanical engineer, CAD designer, SolidWorks, AutoCAD, Inventor, product development">
+
+    <meta property="og:title" content="Surendra Mahara - Mechanical Design Engineer">
+    <meta property="og:description"
+        content="Explore the portfolio of Surendra Mahara, expert in CAD modeling, product design, and mechanical systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://surendramahara.com.np">
+    <meta property="og:image" content="https://surendramahara.com.np/images/og-image.jpg">
+    <link rel="canonical" href="https://surendramahara.com.np">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            100: '#DBEAFE', // Light blue for backgrounds
+                            400: '#60A5FA', // Medium blue for accents
+                            500: '#3B82F6', // Primary blue for icons/buttons
+                            600: '#2563EB', // Darker blue for hover
+                        },
+                    },
+                },
+            },
+        };
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        /* Animation for section and items */
+        .reveal-section {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: reveal 0.6s ease forwards;
+        }
+
+        .reveal-item {
+            opacity: 0;
+            transform: translateY(20px) scale(0.95);
+            animation: reveal 0.6s ease forwards;
+        }
+
+        .reveal-item:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .reveal-item:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .reveal-item:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .reveal-item:nth-child(4) {
+            animation-delay: 0.8s;
+        }
+
+        @keyframes reveal {
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Video container and play overlay */
+        .video-container {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .play-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.4);
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+
+        .video-container:hover .play-overlay {
+            opacity: 0;
+        }
+
+        .play-button {
+            background: rgba(59, 130, 246, 0.8);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease;
+        }
+
+        .play-button:hover {
+            transform: scale(1.1);
+        }
+
+        /* Navigation link styles */
+        /* .nav-link {
+            position: relative;
+            color: #1F2937;
+            font-weight: 500;
+            font-size: 1rem;
+            padding-bottom: 4px;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .dark .nav-link {
+            color: #E5E7EB;
+        }
+        .nav-link:hover {
+            color: #3B82F6;
+            transform: scale(1.05);
+        }
+        .dark .nav-link:hover {
+            color: #60A5FA;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #3B82F6;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s ease;
+        }
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            transform: scaleX(1);
+        }
+        .dark .nav-link:hover::after,
+        .dark .nav-link.active::after {
+            background-color: #60A5FA;
+        }
+        .nav-link.active {
+            font-weight: 700;
+            color: #3B82F6;
+        }
+        .dark .nav-link.active {
+            color: #60A5FA;
+        } */
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
+
+    <header class="fixed w-full bg-white dark:bg-gray-900 shadow-sm z-40 transition-colors duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <a href="index.html" class="text-xl font-bold text-blue-600 dark:text-blue-400 flex items-center gap-2">
+                    <span>Surendra Mahara</span>
+                </a>
+                <div class="flex items-center gap-4">
+                    <nav class="hidden md:flex items-center space-x-5">
+                        <a href="index.html" class="nav-link" aria-current="page">Home</a>
+                        <a href="experience.html" class="nav-link">Experience</a>
+                        <a href="education.html" class="nav-link">Education</a>
+                        <a href="skills.html" class="nav-link">Skills</a>
+                        <a href="projects.html" class="nav-link active">Projects</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </nav>
+                    <button id="darkModeToggle"
+                        class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        aria-label="Toggle dark mode">
+                        <i class="fa-solid fa-sun hidden text-xl" id="icon-sun"></i>
+                        <i class="fa-solid fa-moon text-xl" id="icon-moon"></i>
+                    </button>
+                    <button id="mobileMenuButton"
+                        class="md:hidden p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        aria-label="Open menu">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden py-6 px-4">
+                <nav class="flex flex-col space-y-3">
+                    <a href="index.html" class="nav-link" aria-current="page">Home</a>
+                    <a href="experience.html" class="nav-link">Experience</a>
+                    <a href="education.html" class="nav-link">Education</a>
+                    <a href="skills.html" class="nav-link">Skills</a>
+                    <a href="projects.html" class="nav-link active">Projects</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Projects Section -->
+        <section id="projects" class="py-20 bg-gray-100 dark:bg-gray-800 transition-colors duration-300">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold mb-16 text-center text-gray-900 dark:text-white reveal-section">
+                    Featured Projects
+                </h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Project 1: Food Processing Machine Redesign (Video) -->
+                    <div
+                        class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-item">
+                        <div class="video-container">
+                            <video controls aria-label="Video demo of Food Processing Machine Redesign" loading="lazy">
+                                <source src="videos/food-machine.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="play-overlay">
+                                <div class="play-button">
+                                    <i class="fa-solid fa-play h-6 w-6 text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                Food Processing Machine Redesign
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                                Watch the redesigned machine in action, boosting efficiency by 18% and cutting energy
+                                use by 10% through optimized components.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300">
+                                    <i class="fa-solid fa-drafting-compass h-4 w-4 mr-1"></i> SolidWorks
+                                </span>
+                                <span
+                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300">
+                                    <i class="fa-solid fa-cubes h-4 w-4 mr-1"></i> 3D Modeling
+                                </span>
+                                <span
+                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300">
+                                    <i class="fa-solid fa-tools h-4 w-4 mr-1"></i> Prototyping
+                                </span>
+                            </div>
+                            <a href="#project-food-machine"
+                                class="inline-flex items-center w-full py-2 px-4 rounded-lg bg-primary-500 hover:bg-primary-600 dark:bg-primary-600 dark:hover:bg-primary-700 text-white text-sm font-medium transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">
+                                View Details
+                                <i class="fa-solid fa-arrow-right h-4 w-4 ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Electric Motor Component Prototyping (Image) -->
+                    <div
+                        class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-item">
+                        <div class="w-full aspect-[4/3]">
+                            <img src="images/motor-component.jpg" alt="Electric Motor Component Prototyping"
+                                class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                Electric Motor Component Prototyping
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                                Developed 3D models and prototypes for electric motor parts, improving efficiency by 5%
+                                through precise tolerances and testing.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300">
+                                    <i class="fa-solid fa-cubes h-4 w-4 mr-1"></i> Inventor
+                                </span>
+                                <span
+                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300">
+                                    <i class="fa-solid fa-pen-ruler h-4 w-4 mr-1"></i> Technical Drawing
+                                </span>
+                                <span
+                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-300">
+                                    <i class="fa-solid fa-vial h-4 w-4 mr-1"></i> Testing
+                                </span>
+                            </div>
+                            <a href="#project-motor-component"
+                                class="inline-flex items-center w-full py-2 px-4 rounded-lg bg-primary-500 hover:bg-primary-600 dark:bg-primary-600 dark:hover:bg-primary-700 text-white text-sm font-medium transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">
+                                View Details
+                                <i class="fa-solid fa-arrow-right h-4 w-4 ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Industrial Piping System Optimization (Video) -->
+                    <div
+                        class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-item">
+                        <div class="video-container">
+                            <video controls aria-label="Video demo of Industrial Piping System Optimization"
+                                loading="lazy">
+                                <source src="videos/piping-system.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="play-overlay">
+                                <div class="play-button">
+                                    <i class="fa-solid fa-play h-6 w-6 text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                Industrial Piping System Optimization
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                                See the optimized piping layout in action, reducing material costs by 15% while meeting
+                                industry standards.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300">
+                                    <i class="fa-solid fa-pipe-valve h-4 w-4 mr-1"></i> AutoCAD
+                                </span>
+                                <span
+                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300">
+                                    <i class="fa-solid fa-drafting-compass h-4 w-4 mr-1"></i> Piping Design
+                                </span>
+                                <span
+                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300">
+                                    <i class="fa-solid fa-chart-line h-4 w-4 mr-1"></i> FEA
+                                </span>
+                            </div>
+                            <a href="#project-piping-system"
+                                class="inline-flex items-center w-full py-2 px-4 rounded-lg bg-primary-500 hover:bg-primary-600 dark:bg-primary-600 dark:hover:bg-primary-700 text-white text-sm font-medium transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">
+                                View Details
+                                <i class="fa-solid fa-arrow-right h-4 w-4 ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Structural Frame Design (Image) -->
+                    <div
+                        class="bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 reveal-item">
+                        <div class="w-full aspect-[4/3]">
+                            <img src="images/structural-frame.jpg" alt="Structural Frame Design"
+                                class="w-full h-full object-cover" loading="lazy">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                                Structural Frame Design
+                            </h3>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                                Designed a robust structural frame for heavy machinery, enhancing stability and reducing
+                                material usage by 10%.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span
+                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-300">
+                                    <i class="fa-solid fa-drafting-compass h-4 w-4 mr-1"></i> SolidWorks
+                                </span>
+                                <span
+                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-300">
+                                    <i class="fa-solid fa-building h-4 w-4 mr-1"></i> Structural Design
+                                </span>
+                                <span
+                                    class="inline-flex items-center px-2 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300">
+                                    <i class="fa-solid fa-chart-line h-4 w-4 mr-1"></i> FEA
+                                </span>
+                            </div>
+                            <a href="#project-structural-frame"
+                                class="inline-flex items-center w-full py-2 px-4 rounded-lg bg-primary-500 hover:bg-primary-600 dark:bg-primary-600 dark:hover:bg-primary-700 text-white text-sm font-medium transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">
+                                View Details
+                                <i class="fa-solid fa-arrow-right h-4 w-4 ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Enhanced Footer -->
+    <footer class="bg-gray-900 dark:bg-gray-950 text-white py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+
+                <!-- Branding -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-2 text-blue-400">Surendra Mahara</h3>
+                    <p class="text-gray-400 mb-4">Gold Medalist Mechanical Design Engineer</p>
+                    <div class="flex items-center space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-500 transition" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="mailto:youremail@example.com" class="text-gray-400 hover:text-blue-500 transition"
+                            aria-label="Email">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </a>
+                                              <!-- <a href="#" class="text-gray-400 hover:text-blue-500 transition" aria-label="GitHub">
+                            <i class="fab fa-github text-xl"></i>
+                        </a> -->
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-3 text-blue-400">Navigation</h4>
+                    <ul class="grid grid-cols-2 gap-2">
+                        <li><a href="index.html" class="hover:text-blue-500 transition">Home</a></li>
+                        <li><a href="experience.html" class="hover:text-blue-500 transition">Experience</a></li>
+                        <li><a href="education.html" class="hover:text-blue-500 transition">Education</a></li>
+                        <li><a href="skills.html" class="hover:text-blue-500 transition">Skills</a></li>
+                        <li><a href="projects.html" class="hover:text-blue-500 transition">Projects</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-500 transition">Contact</a></li>
+                    </ul>
+                </div>
+
+
+                <!-- Quick Contact -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-3 text-blue-400">Get In Touch</h4>
+                    <p class="text-gray-400 mb-2 flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt text-blue-400"></i>
+                        Gujrat, India
+                    </p>
+                    <p class="text-gray-400 mb-2 flex items-center gap-2">
+                        <i class="fas fa-envelope text-blue-400"></i>
+                        <a href="mailto:surenmahara2020@gmail.com"
+                            class="hover:text-blue-500 transition">surenmahara2020@gmail.com</a>
+                    </p>
+                    <p class="text-gray-400 flex items-center gap-2">
+                        <i class="fas fa-phone text-blue-400"></i>
+                        +977 9842394898
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="mt-12 border-t border-gray-700 pt-6 text-center text-sm text-gray-500">
+                <p>© <span id="year"></span> Surendra Mahara. All rights reserved.</p>
+                <p class="mt-2 text-gray-400">
+                    Powered by
+                    <a href="https://danmahara.com.np" target="_blank"
+                        class="animated-underline text-blue-400 hover:text-blue-400 transition-colors duration-300">
+                        Dan Mahara
+                    </a>
+                </p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+    <script>
+        const htmlElement = document.documentElement;
+        const toggleBtn = document.getElementById('darkModeToggle');
+        const iconSun = document.getElementById('icon-sun');
+        const iconMoon = document.getElementById('icon-moon');
+
+        // Update icons based on mode
+        function updateIcons() {
+            const isDark = htmlElement.classList.contains('dark');
+            iconSun.classList.toggle('hidden', !isDark);
+            iconMoon.classList.toggle('hidden', isDark);
+        }
+
+        // Toggle dark mode
+        function toggleDarkMode() {
+            htmlElement.classList.toggle('dark');
+            const isDark = htmlElement.classList.contains('dark');
+            localStorage.setItem('darkMode', isDark);
+            updateIcons();
+        }
+
+        // Init dark mode on page load
+        function initDarkMode() {
+            const savedMode = localStorage.getItem('darkMode');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedMode === 'true' || (savedMode === null && prefersDark)) {
+                htmlElement.classList.add('dark');
+            }
+            updateIcons();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initDarkMode();
+            toggleBtn.addEventListener('click', toggleDarkMode);
+
+            // Mobile Menu Handling
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const mobileMenu = document.getElementById('mobileMenu');
+
+            // Toggle mobile menu visibility on click
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+                mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+            });
+
+            // Close mobile menu when clicking on a link
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    mobileMenuButton.setAttribute('aria-expanded', 'false');
+                });
+            });
+        });
+
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const currentPath = window.location.pathname.split("/").pop(); // Get the current file name
+            const navLinks = document.querySelectorAll(".nav-link");
+    
+            navLinks.forEach(link => {
+                const linkPath = link.getAttribute("href");
+                if (linkPath === currentPath || (currentPath === "" && linkPath === "index.html")) {
+                    link.classList.add("active");
+                    link.setAttribute("aria-current", "page");
+                } else {
+                    link.classList.remove("active");
+                    link.removeAttribute("aria-current");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
