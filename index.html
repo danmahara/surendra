@@ -11,11 +11,19 @@
 
     <meta property="og:title" content="Surendra Mahara - Mechanical Design Engineer">
     <meta property="og:description"
-        content="Professional portfolio of Surendra Mahara, a Gold Medalist B-Tech Mechanical Engineer specializing in CAD and design.">
+        content="Portfolio of Surendra Mahara, a Gold Medalist Mechanical Design Engineer specializing in CAD modeling, product development, and reverse engineering.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://surendramahara.com.np">
     <meta property="og:image" content="https://surendramahara.com.np/images/og-image.jpg">
     <link rel="canonical" href="https://surendramahara.com.np">
+
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Surendra Mahara - Mechanical Design Engineer">
+    <meta name="twitter:description"
+        content="Portfolio of Surendra Mahara, a Gold Medalist Mechanical Design Engineer specializing in CAD modeling, product development, and reverse engineering.">
+    <meta name="twitter:image" content="https://surendramahara.com.np/images/og-image.jpg">
+
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.min.css">
@@ -30,6 +38,32 @@
             darkMode: 'class',
         }
     </script>
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Surendra Mahara",
+      "jobTitle": "Mechanical Design Engineer",
+      "url": "https://surendramahara.com.np",
+      "image": "https://surendramahara.com.np/images/og-image.jpg",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "RK University"
+      },
+      "award": "Gold Medalist - B.Tech in Mechanical Engineering",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "MGL Group"
+      },
+      "email": "mailto:surenmahara2020@gmail.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/surendra-mahara",
+        "https://github.com/danmahara"
+      ]
+    }
+    </script>
+    
 
 </head>
 
@@ -130,7 +164,7 @@
                             aria-label="Email">
                             <i class="fas fa-envelope text-xl"></i>
                         </a>
-                                              <!-- <a href="#" class="text-gray-400 hover:text-blue-500 transition" aria-label="GitHub">
+                        <!-- <a href="#" class="text-gray-400 hover:text-blue-500 transition" aria-label="GitHub">
                             <i class="fab fa-github text-xl"></i>
                         </a> -->
                     </div>
@@ -249,7 +283,7 @@
         document.addEventListener("DOMContentLoaded", function () {
             const currentPath = window.location.pathname.split("/").pop(); // Get the current file name
             const navLinks = document.querySelectorAll(".nav-link");
-    
+
             navLinks.forEach(link => {
                 const linkPath = link.getAttribute("href");
                 if (linkPath === currentPath || (currentPath === "" && linkPath === "index.html")) {
@@ -262,7 +296,7 @@
             });
         });
     </script>
-    
+
 </body>
 
 </html>
