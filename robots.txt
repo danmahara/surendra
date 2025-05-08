@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://surendramahara.com.np/sitemap.xml
