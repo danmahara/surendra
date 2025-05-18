@@ -32,8 +32,6 @@
         content="Portfolio of Surendra Mahara, a Gold Medalist Mechanical Design Engineer specializing in CAD modeling, product development, and reverse engineering." />
     <meta name="twitter:image" content="https://surendramahara.com.np/images/og-image.jpg" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- Fonts and Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.min.css" />
@@ -41,6 +39,7 @@
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -75,6 +74,51 @@
       ]
     }
   </script>
+
+    <style>
+        /* Animation classes */
+        .animate-fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .animate-fade-in-left {
+            opacity: 0;
+            transform: translateX(20px);
+            animation: fadeInLeft 0.8s ease-out forwards;
+        }
+
+        .delay-100 {
+            animation-delay: 0.1s;
+        }
+
+        .delay-200 {
+            animation-delay: 0.2s;
+        }
+
+        .delay-300 {
+            animation-delay: 0.3s;
+        }
+
+        .delay-400 {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
 </head>
 
 <body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
@@ -119,7 +163,7 @@
         </div>
     </header>
 
-    <main>
+    <!-- <main>
         <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col md:flex-row items-center justify-between gap-8">
@@ -155,6 +199,46 @@
                 </div>
             </div>
         </section>
+    </main> -->
+
+    <main>
+        <section id="home" class="pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div class="w-full md:w-1/2 animate-fade-in-up">
+                        <h1
+                            class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 leading-tight text-gray-900 dark:text-white animate-fade-in-up delay-100">
+                            Mechanical Engineer | CAD Specialist | Gold Medalist
+                        </h1>
+                        <div
+                            class="text-lg md:text-xl text-blue-600 dark:text-blue-400 font-medium mb-4 animate-fade-in-up delay-200">
+                            Product Development
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 mb-8 text-lg animate-fade-in-up delay-300">
+                            I'm Surendra Mahara, a Gold Medalist B-Tech Mechanical Engineer from RK University, with
+                            expertise in real-world mechanical design, currently working at MGL Group.
+                        </p>
+                        <div class="flex flex-wrap gap-4 animate-fade-in-up delay-400">
+                            <!-- <a href="#"
+                            class="inline-flex items-center px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-medium transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                            <i data-lucide="file-text" class="h-5 w-5 mr-2"></i>
+                            Download Resume
+                        </a> -->
+                            <a href="projects.html"
+                                class="inline-flex items-center px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white dark:bg-gray-700 dark:hover:bg-gray-600 font-medium transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2">
+                                <i class="fa-solid fa-briefcase h-5 w-5 mr-2"></i>
+                                View Projects
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/2 flex justify-center animate-fade-in-left">
+                        <img src="1.jpg" alt="Mechanical Design Engineer at workstation"
+                            class="w-full max-w-lg rounded-lg shadow-lg transition-transform duration-700 hover:scale-105">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Enhanced Footer -->
@@ -165,12 +249,15 @@
                 <!-- Branding -->
                 <div>
                     <h3 class="text-2xl font-bold mb-2 text-blue-400">Surendra Mahara</h3>
-                    <p class="text-gray-400 mb-4">Gold Medalist Mechanical Design Engineer</p>
+                    <div class="text-gray-400 space-y-1 mb-2">
+                        <p>Gold Medalist Mechanical Engineer</p>
+                        <p>Specialist/Proficiency in CAD design</p>
+                    </div>
                     <div class="flex items-center space-x-4 mt-4">
-                        <a href="#" class="text-gray-400 hover:text-blue-500 transition" aria-label="LinkedIn">
+                         <a href="https://www.linkedin.com/in/surendramahara/" target="_blank" class="text-gray-400 hover:text-blue-500 transition" aria-label="LinkedIn">
                             <i class="fab fa-linkedin text-xl"></i>
                         </a>
-                        <a href="mailto:youremail@example.com" class="text-gray-400 hover:text-blue-500 transition"
+                        <a href="mailto:ersurendra1221@gmail.com?subject=Contact%20from%20Portfolio" target="_blank" class="text-gray-400 hover:text-blue-500 transition"
                             aria-label="Email">
                             <i class="fas fa-envelope text-xl"></i>
                         </a>
@@ -199,16 +286,26 @@
                     <h4 class="text-lg font-semibold mb-3 text-blue-400">Get In Touch</h4>
                     <p class="text-gray-400 mb-2 flex items-center gap-2">
                         <i class="fas fa-map-marker-alt text-blue-400"></i>
-                        Gujrat, India
+                        Attariya-Kailali, Nepal
                     </p>
                     <p class="text-gray-400 mb-2 flex items-center gap-2">
                         <i class="fas fa-envelope text-blue-400"></i>
-                        <a href="mailto:surenmahara2020@gmail.com"
-                            class="hover:text-blue-500 transition">surenmahara2020@gmail.com</a>
+                        <a href="mailto:ersurendra1221@gmail.com?subject=Contact%20from%20Portfolio"
+                            class="hover:text-blue-500 transition">ersurendra1221@gmail.com</a>
                     </p>
-                    <p class="text-gray-400 flex items-center gap-2">
-                        <i class="fas fa-phone text-blue-400"></i>
-                        +977 9842394898
+                    <p class="text-gray-400 flex items-center gap-4">
+                        <!-- <span class="flex items-center gap-2">
+                            <i class="fas fa-phone text-blue-400"></i>
+                            +977 9842394898
+                        </span> -->
+                        <span class="flex items-center gap-2">
+                            <a href="https://wa.me/918291216028" target="_blank" rel="noopener noreferrer"
+                                class="text-green-500 hover:text-green-600 transition-colors flex items-center gap-2"
+                                aria-label="Chat on WhatsApp">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                                +91 8291216028
+                            </a>
+                        </span>
                     </p>
                 </div>
             </div>

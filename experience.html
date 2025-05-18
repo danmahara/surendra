@@ -1,40 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
-  <!-- Essential Meta Tags -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-  <title>Experience - Surendra Mahara | Mechanical Design Engineer</title>
-  <meta name="description"
-    content="Explore Surendra Mahara's professional experience in CAD design, product development, and mechanical engineering projects." />
-  <meta name="keywords"
-    content="Mechanical Engineer, CAD Designer, Product Development, SolidWorks, AutoCAD, Inventor, Finite Element Analysis, Mechanical Systems, Engineering Portfolio" />
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="Surendra Mahara" />
-  <meta name="language" content="English" />
-  <link rel="canonical" href="https://surendramahara.com.np/experience" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surendra Mahara - Mechanical Design Engineer</title>
 
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Experience - Surendra Mahara | Mechanical Design Engineer" />
-  <meta property="og:description"
-    content="Explore the professional portfolio of Surendra Mahara, showcasing expertise in CAD modeling, product design, and mechanical systems engineering." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://surendramahara.com.np/experience" />
-  <meta property="og:image" content="https://surendramahara.com.np/images/og-image.jpg" />
+    <meta name="google-site-verification" content="CLnqiFLpR6dJ8quPrHvs3oU85_CtGfGt_ighJ_-sEio" />
 
-  <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Surendra Mahara - Gold Medalist Mechanical Design Engineer" />
-  <meta name="twitter:description"
-    content="Innovative CAD modeling, mechanical design, and product development by Surendra Mahara, a Gold Medalist Mechanical Engineer." />
-  <meta name="twitter:image" content="https://surendramahara.com.np/images/og-image.jpg" />
+    <meta name="description"
+        content="Portfolio of Surendra Mahara, a Gold Medalist Mechanical Design Engineer specializing in CAD modeling, product development, and reverse engineering." />
+    <meta name="keywords"
+        content="mechanical engineer, design engineer, CAD specialist, SolidWorks, AutoCAD, Inventor, product development, reverse engineering" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Surendra Mahara" />
+    <meta name="language" content="English" />
+    <link rel="canonical" href="https://surendramahara.com.np" />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Surendra Mahara - Mechanical Design Engineer" />
+    <meta property="og:description"
+        content="Portfolio of Surendra Mahara, a Gold Medalist Mechanical Design Engineer specializing in CAD modeling, product development, and reverse engineering." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://surendramahara.com.np" />
+    <meta property="og:image" content="https://surendramahara.com.np/images/og-image.jpg" />
 
-  <!-- Structured Data (JSON-LD) -->
-  <script type="application/ld+json">
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Surendra Mahara - Mechanical Design Engineer" />
+    <meta name="twitter:description"
+        content="Portfolio of Surendra Mahara, a Gold Medalist Mechanical Design Engineer specializing in CAD modeling, product development, and reverse engineering." />
+    <meta name="twitter:image" content="https://surendramahara.com.np/images/og-image.jpg" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            100: '#DBEAFE', // Light blue for backgrounds
+                            400: '#60A5FA', // Medium blue for accents
+                            500: '#3B82F6', // Primary blue for icons/buttons
+                            600: '#2563EB', // Darker blue for hover
+                        },
+                    },
+                },
+            },
+        };
+    </script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+
+    <style>
+        .reveal-section {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: reveal 0.6s ease forwards;
+        }
+
+        .reveal-item {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: reveal 0.6s ease forwards;
+        }
+
+        .reveal-item:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .reveal-item:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .reveal-item:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        @keyframes reveal {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
@@ -42,12 +105,6 @@
       "jobTitle": "Mechanical Design Engineer",
       "url": "https://surendramahara.com.np",
       "image": "https://surendramahara.com.np/images/og-image.jpg",
-      "description": "Gold Medalist Mechanical Engineer specializing in CAD, product development, and design innovation.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Gujarat",
-        "addressCountry": "India"
-      },
       "alumniOf": {
         "@type": "EducationalOrganization",
         "name": "RK University"
@@ -58,77 +115,15 @@
         "name": "MGL Group"
       },
       "email": "mailto:surenmahara2020@gmail.com",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Customer Support",
-        "email": "surenmahara2020@gmail.com",
-        "url": "https://surendramahara.com.np/contact",
-        "availableLanguage": "English"
-      },
       "sameAs": [
         "https://www.linkedin.com/in/surendra-mahara",
         "https://github.com/danmahara"
       ]
     }
   </script>
-
-  <!-- Tailwind CSS Config -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            primary: {
-              100: '#DBEAFE',
-              400: '#60A5FA',
-              500: '#3B82F6',
-              600: '#2563EB',
-            },
-          },
-        },
-      },
-    };
-  </script>
-
-  <!-- Custom Styles -->
-  <style>
-    .reveal-section {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: reveal 0.6s ease forwards;
-    }
-
-    .reveal-item {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: reveal 0.6s ease forwards;
-    }
-
-    .reveal-item:nth-child(1) {
-      animation-delay: 0.2s;
-    }
-
-    .reveal-item:nth-child(2) {
-      animation-delay: 0.4s;
-    }
-
-    .reveal-item:nth-child(3) {
-      animation-delay: 0.6s;
-    }
-
-    @keyframes reveal {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-  </style>
 </head>
 
 <body class="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200 transition-colors duration-300">
-
     <header class="fixed w-full bg-white dark:bg-gray-900 shadow-sm z-40 transition-colors duration-300">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
@@ -137,7 +132,7 @@
                 </a>
                 <div class="flex items-center gap-4">
                     <nav class="hidden md:flex items-center space-x-5">
-                        <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+                        <a href="index.html" class="nav-link " aria-current="page">Home</a>
                         <a href="experience.html" class="nav-link">Experience</a>
                         <a href="education.html" class="nav-link">Education</a>
                         <a href="skills.html" class="nav-link">Skills</a>
@@ -169,13 +164,14 @@
             </div>
         </div>
     </header>
+
     <main>
         <!-- Experience Section -->
         <section id="experience" class="py-20 bg-gray-100 dark:bg-gray-800 transition-colors duration-300">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-4xl mt-8 font-bold mb-12 text-center text-gray-900 dark:text-white reveal-section">
+                <h1 class="text-4xl mt-8 font-bold mb-12 text-center text-gray-900 dark:text-white reveal-section">
                     Professional Experience
-                </h2>
+                </h1>
 
                 <div class="max-w-4xl mx-auto">
                     <!-- Timeline Item 1 -->
@@ -203,12 +199,13 @@
                                 solutions.
                             </p>
                             <ul class="text-gray-600 dark:text-gray-300 list-disc list-inside text-sm">
-                                <li>Designed and modeled 3D components using SolidWorks and AutoCAD, reducing production
-                                    costs by 12% through optimized designs.</li>
+                                <li>Designed and modeled 3D components using SolidWorks and AutoCAD.</li>
+
                                 <li>Prepared detailed shop drawings and technical documentation, ensuring compliance
                                     with international standards.</li>
-                                <li>Coordinated with international clients and engineering teams to streamline project
-                                    workflows, improving delivery timelines by 15%.</li>
+                                <li>Collaborated effectively with international clients and engineering teams to enhance
+                                    project workflow efficiency and communication.</li>
+
                                 <li>Conducted finite element analysis (FEA) to validate component durability under
                                     varying loads.</li>
                             </ul>
@@ -233,15 +230,16 @@
                                     January 2023 – June 2023
                                 </span>
                             </div>
-                            <p class="text-gray-500 dark:text-gray-400 mb-3 font-medium">Food Machinery Manufacturer,
+                            <p class="text-gray-500 dark:text-gray-400 mb-3 font-medium">Yash engineering Company,
                                 Rajkot, Gujarat</p>
                             <p class="text-gray-600 dark:text-gray-300 mb-4">
                                 Contributed to the redesign of food processing equipment, focusing on improving
                                 efficiency and sustainability through innovative mechanical solutions.
                             </p>
                             <ul class="text-gray-600 dark:text-gray-300 list-disc list-inside text-sm">
-                                <li>Redesigned critical components using Inventor, increasing equipment output by 18%
-                                    and reducing energy consumption by 10%.</li>
+                                <li>Redesigned critical components using Inventor to increase equipment output and
+                                    improve energy efficiency.</li>
+
                                 <li>Developed 3D models and prototypes, conducting iterative testing to ensure
                                     performance and reliability.</li>
                                 <li>Assisted in creating technical drawings and BOMs, supporting seamless production
@@ -262,8 +260,8 @@
                         <div
                             class="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 w-full">
                             <div class="flex flex-wrap justify-between items-start mb-3">
-                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Part-Time Mechanical
-                                    Design Assistant</h3>
+                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Part-Time Quality
+                                    Assurance (QA) and Inventory Management</h3>
                                 <span
                                     class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300">
                                     October 2022 – December 2022
@@ -272,25 +270,42 @@
                             <p class="text-gray-500 dark:text-gray-400 mb-3 font-medium">Impel Motors, Rajkot, Gujarat
                             </p>
                             <p class="text-gray-600 dark:text-gray-300 mb-4">
-                                Supported the design and testing of electric motor components, gaining hands-on
-                                experience in precision engineering and quality assurance.
+                                Supported the testing of electric motor components, gaining hands-on experience in
+                                precision engineering and quality assurance.
                             </p>
+
                             <ul class="text-gray-600 dark:text-gray-300 list-disc list-inside text-sm">
-                                <li>Created 3D models and technical drawings for motor components using Autodesk
-                                    Inventor, ensuring tight tolerances.</li>
-                                <li>Conducted performance tests on prototypes, identifying design improvements that
-                                    enhanced motor efficiency by 5%.</li>
-                                <li>Assisted in quality control processes, verifying component specifications against
-                                    design requirements.</li>
-                                <li>Participated in design review meetings, providing insights that improved component
-                                    manufacturability.</li>
+                                <li>Conducted dimensional and visual inspection of mechanical components such as motor
+                                    bodies, end covers, stator housings, and shafts to ensure conformance to technical
+                                    drawings and tolerances.</li>
+                                <li>Verified machined parts for defects like burrs, surface finish issues, and improper
+                                    fits using tools such as vernier calipers, micrometers, and gauges.</li>
+                                <li>Assisted in performing fitment checks for component assemblies before moving to the
+                                    next production stage.</li>
+                                <li>Maintained inspection logs, recorded non-conformances, and escalated issues to the
+                                    quality engineer for resolution.</li>
+                                <li>Supported incoming material inspection to verify supplier-provided components met
+                                    quality and dimensional standards.</li>
+                                <li>Helped maintain inventory records for critical mechanical parts, ensuring stock
+                                    accuracy and traceability.</li>
+                                <li>Performed cycle counting and coordinated with the store team to reduce stock
+                                    discrepancies and avoid production delays.</li>
+                                <li>Organized and labeled heavy mechanical components for easier access and first-in,
+                                    first-out (FIFO) inventory management.</li>
+                                <li>Collaborated with production and procurement teams to ensure timely availability of
+                                    key components, reducing idle machine time.</li>
+                                <li>Developed a solid understanding of mechanical drawings, tolerances, and quality
+                                    control practices relevant to motor manufacturing.</li>
                             </ul>
+
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+
 
     <!-- Enhanced Footer -->
     <footer class="bg-gray-900 dark:bg-gray-950 text-white py-12">
@@ -300,13 +315,17 @@
                 <!-- Branding -->
                 <div>
                     <h3 class="text-2xl font-bold mb-2 text-blue-400">Surendra Mahara</h3>
-                    <p class="text-gray-400 mb-4">Gold Medalist Mechanical Design Engineer</p>
+                    <div class="text-gray-400 space-y-1 mb-2">
+                        <p>Gold Medalist Mechanical Engineer</p>
+                        <p>Specialist/Proficiency in CAD design</p>
+                    </div>
                     <div class="flex items-center space-x-4 mt-4">
-                        <a href="#" class="text-gray-400 hover:text-blue-500 transition" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/surendramahara/" target="_blank"
+                            class="text-gray-400 hover:text-blue-500 transition" aria-label="LinkedIn">
                             <i class="fab fa-linkedin text-xl"></i>
                         </a>
-                        <a href="mailto:youremail@example.com" class="text-gray-400 hover:text-blue-500 transition"
-                            aria-label="Email">
+                        <a href="mailto:ersurendra1221@gmail.com?subject=Contact%20from%20Portfolio" target="_blank"
+                            class="text-gray-400 hover:text-blue-500 transition" aria-label="Email">
                             <i class="fas fa-envelope text-xl"></i>
                         </a>
                         <!-- <a href="#" class="text-gray-400 hover:text-blue-500 transition" aria-label="GitHub">
@@ -334,16 +353,26 @@
                     <h4 class="text-lg font-semibold mb-3 text-blue-400">Get In Touch</h4>
                     <p class="text-gray-400 mb-2 flex items-center gap-2">
                         <i class="fas fa-map-marker-alt text-blue-400"></i>
-                        Gujrat, India
+                        Attariya-Kailali, Nepal
                     </p>
                     <p class="text-gray-400 mb-2 flex items-center gap-2">
                         <i class="fas fa-envelope text-blue-400"></i>
-                        <a href="mailto:surenmahara2020@gmail.com"
-                            class="hover:text-blue-500 transition">surenmahara2020@gmail.com</a>
+                        <a href="mailto:ersurendra1221@gmail.com?subject=Contact%20from%20Portfolio"
+                            class="hover:text-blue-500 transition">ersurendra1221@gmail.com</a>
                     </p>
-                    <p class="text-gray-400 flex items-center gap-2">
-                        <i class="fas fa-phone text-blue-400"></i>
-                        +977 9842394898
+                    <p class="text-gray-400 flex items-center gap-4">
+                        <!-- <span class="flex items-center gap-2">
+                            <i class="fas fa-phone text-blue-400"></i>
+                            +977 9842394898
+                        </span> -->
+                        <span class="flex items-center gap-2">
+                            <a href="https://wa.me/918291216028" target="_blank" rel="noopener noreferrer"
+                                class="text-green-500 hover:text-green-600 transition-colors flex items-center gap-2"
+                                aria-label="Chat on WhatsApp">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                                +91 8291216028
+                            </a>
+                        </span>
                     </p>
                 </div>
             </div>
@@ -441,6 +470,7 @@
             });
         });
     </script>
+
 </body>
 
 </html>

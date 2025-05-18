@@ -18,8 +18,19 @@
     <meta property="og:image" content="https://surendramahara.com.np/images/og-image.jpg">
     <link rel="canonical" href="https://surendramahara.com.np">
 
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+
+    <!-- Fonts and Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/styles.css">
 
     <script>
         tailwind.config = {
@@ -38,31 +49,38 @@
             },
         };
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <style>
         .reveal-section {
             opacity: 0;
             transform: translateY(20px);
             animation: reveal 0.6s ease forwards;
         }
+
         .reveal-item {
             opacity: 0;
             transform: translateY(20px);
             animation: reveal 0.6s ease forwards;
         }
-        .reveal-item:nth-child(1) { animation-delay: 0.2s; }
-        .reveal-item:nth-child(2) { animation-delay: 0.4s; }
-        .reveal-item:nth-child(3) { animation-delay: 0.6s; }
+
+        .reveal-item:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .reveal-item:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .reveal-item:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
         @keyframes reveal {
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-
     </style>
-    <link rel="stylesheet" href="css/styles.css">
 
 </head>
 
@@ -118,70 +136,75 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     <!-- Education Item 1 -->
-                    <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 reveal-item">
+                    <div
+                        class="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 reveal-item">
                         <div class="flex items-center mb-4">
-                            <div class="rounded-full bg-primary-500 p-3 mr-4">
-                                <i class="fa-solid fa-graduation-cap h-6 w-6 text-white"></i>
+                            <div
+                                class="rounded-full flex items-center justify-center text-center  bg-primary-500 h-12 w-12 ">
+                                <i class="fa-solid fa-graduation-cap text-white"></i>
                             </div>
-                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">B.Tech in Mechanical Engineering</h3>
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">B.Tech in Mechanical
+                                Engineering</h3>
                         </div>
-                        <p class="text-gray-500 dark:text-gray-400 mb-3 font-medium">RK University, Rajkot, Gujarat (2019–2023)</p>
-                        <div class="flex items-center bg-amber-100 dark:bg-amber-900 text-amber-600 dark:text-amber-300 rounded-full px-3 py-1 mb-4 w-fit">
+                        <p class="text-gray-500 dark:text-gray-400 mb-3 font-medium">RK University, Rajkot, Gujarat
+                            (2019–2023)</p>
+                        <div
+                            class="flex items-center bg-amber-100 dark:bg-amber-900 text-amber-600 dark:text-amber-300 rounded-full px-3 py-1 mb-4 w-fit">
                             <i class="fa-solid fa-medal h-5 w-5 mr-2"></i>
                             <span class="font-medium">Gold Medalist</span>
                         </div>
                         <p class="text-gray-600 dark:text-gray-300 mb-4">
-                            Graduated with top honors, specializing in CAD, product design, and manufacturing processes. Completed projects in SolidWorks and AutoCAD, focusing on innovative mechanical systems.
+                            Graduated with top honors, specializing in CAD, product design, and manufacturing processes.
                         </p>
-                        <ul class="text-gray-600 dark:text-gray-300 list-disc list-inside text-sm">
-                            <li>Relevant Coursework: Machine Design, Thermodynamics, Fluid Mechanics, CAD/CAM</li>
-                            <li>Capstone Project: Designed a high-efficiency food processing machine, increasing throughput by 18%</li>
-                            <li>Extracurricular: Led the university’s Robotics Club, organizing national-level competitions</li>
+                        <ul class="text-gray-600  dark:text-gray-300 list-disc list-inside  text-sd">
+                            <li class="">Relevant Coursework: Machine Design, Thermodynamics, Fluid Mechanics, CAD/CAM
+                            </li>
+                            <li>Completed projects in SolidWorks and AutoCAD, focusing on innovative mechanical systems.
+                            </li>
                         </ul>
                     </div>
 
                     <!-- Education Item 2 -->
-                    <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 reveal-item">
-                        <div class="flex items-center mb-4">
-                            <div class="rounded-full bg-primary-500 p-3 mr-4">
-                                <i class="fa-solid fa-school h-6 w-6 text-white"></i>
+                    <div
+                        class="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 reveal-item">
+                        <div class="flex items-center  mb-4">
+                            <div
+                                class="rounded-full flex items-center justify-center text-center  bg-primary-500 h-12 w-12 ">
+                                <i class="fa-solid fa-school text-white"></i>
                             </div>
-                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Higher Secondary Education</h3>
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Higher Secondary Education
+                            </h3>
                         </div>
-                        <p class="text-gray-500 dark:text-gray-400 mb-3 font-medium">Sagarmatha Multiple College, Nepal (2017–2019)</p>
-                        <p class="text-gray-600 dark:text-gray-300 mb-4">
-                            Excelled in Science stream with a focus on Physics, Chemistry, and Mathematics, preparing a strong foundation for engineering studies.
+                        <p class="text-gray-500 dark:text-gray-400 mb-3 font-medium">Sagarmatha Multiple College, Nepal
+                            (2017–2019)</p>
+                        <p class="text-gray-600 dark:text-gray-300 mb-4  ">
+                            Excelled in Science stream with a focus on Physics, Chemistry, and Mathematics, preparing a
+                            strong foundation for engineering studies.
                         </p>
-                        <ul class="text-gray-600 dark:text-gray-300 list-disc list-inside text-sm">
-                            <li>Achieved top 10% ranking in national board exams</li>
-                            <li>Participated in regional science fairs, winning awards for innovative physics projects</li>
-                            <li>Active member of the Math Club, mentoring peers in advanced calculus</li>
-                        </ul>
                     </div>
 
                     <!-- Education Item 3 -->
-                    <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 reveal-item">
+                    <div
+                        class="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 reveal-item">
                         <div class="flex items-center mb-4">
-                            <div class="rounded-full bg-primary-500 p-3 mr-4">
-                                <i class="fa-solid fa-book-open h-6 w-6 text-white"></i>
+                            <div class="rounded-full bg-primary-500  flex justify-center items-center h-12 w-12  ">
+                                <i class="fa-solid fa-book-open text-white"></i>
                             </div>
-                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Secondary School Education</h3>
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Secondary School Education
+                            </h3>
                         </div>
-                        <p class="text-gray-500 dark:text-gray-400 mb-3 font-medium">Pushpanjali English Boarding School, Nepal (2007–2017)</p>
+                        <p class="text-gray-500 dark:text-gray-400 mb-3 font-medium">Pushpanjali English Boarding
+                            School, Nepal (2007–2017)</p>
                         <p class="text-gray-600 dark:text-gray-300 mb-4">
-                            Built a robust academic foundation with excellence in Mathematics, Science, and English, complemented by leadership in extracurricular activities.
+                            Built a robust academic foundation with excellence in Mathematics, Science, and English,
+                            complemented by leadership in extracurricular activities.
                         </p>
-                        <ul class="text-gray-600 dark:text-gray-300 list-disc list-inside text-sm">
-                            <li>Consistently ranked in the top 5% of the class</li>
-                            <li>Led school’s Science Olympiad team to regional championships</li>
-                            <li>Served as class representative, organizing school-wide events</li>
-                        </ul>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    
+
     <!-- Enhanced Footer -->
     <footer class="bg-gray-900 dark:bg-gray-950 text-white py-12">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -190,16 +213,20 @@
                 <!-- Branding -->
                 <div>
                     <h3 class="text-2xl font-bold mb-2 text-blue-400">Surendra Mahara</h3>
-                    <p class="text-gray-400 mb-4">Gold Medalist Mechanical Design Engineer</p>
+                    <div class="text-gray-400 space-y-1 mb-2">
+                        <p>Gold Medalist Mechanical Engineer</p>
+                        <p>Specialist/Proficiency in CAD design</p>
+                    </div>
                     <div class="flex items-center space-x-4 mt-4">
-                        <a href="#" class="text-gray-400 hover:text-blue-500 transition" aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/surendramahara/" target="_blank"
+                            class="text-gray-400 hover:text-blue-500 transition" aria-label="LinkedIn">
                             <i class="fab fa-linkedin text-xl"></i>
                         </a>
-                        <a href="mailto:youremail@example.com" class="text-gray-400 hover:text-blue-500 transition"
-                            aria-label="Email">
+                        <a href="mailto:ersurendra1221@gmail.com?subject=Contact%20from%20Portfolio" target="_blank"
+                            class="text-gray-400 hover:text-blue-500 transition" aria-label="Email">
                             <i class="fas fa-envelope text-xl"></i>
                         </a>
-                                              <!-- <a href="#" class="text-gray-400 hover:text-blue-500 transition" aria-label="GitHub">
+                        <!-- <a href="#" class="text-gray-400 hover:text-blue-500 transition" aria-label="GitHub">
                             <i class="fab fa-github text-xl"></i>
                         </a> -->
                     </div>
@@ -224,16 +251,26 @@
                     <h4 class="text-lg font-semibold mb-3 text-blue-400">Get In Touch</h4>
                     <p class="text-gray-400 mb-2 flex items-center gap-2">
                         <i class="fas fa-map-marker-alt text-blue-400"></i>
-                        Gujrat, India
+                        Attariya-Kailali, Nepal
                     </p>
                     <p class="text-gray-400 mb-2 flex items-center gap-2">
                         <i class="fas fa-envelope text-blue-400"></i>
-                        <a href="mailto:surenmahara2020@gmail.com"
-                            class="hover:text-blue-500 transition">surenmahara2020@gmail.com</a>
+                        <a href="mailto:ersurendra1221@gmail.com?subject=Contact%20from%20Portfolio"
+                            class="hover:text-blue-500 transition">ersurendra1221@gmail.com</a>
                     </p>
-                    <p class="text-gray-400 flex items-center gap-2">
-                        <i class="fas fa-phone text-blue-400"></i>
-                        +977 9842394898
+                    <p class="text-gray-400 flex items-center gap-4">
+                        <!-- <span class="flex items-center gap-2">
+                            <i class="fas fa-phone text-blue-400"></i>
+                            +977 9842394898
+                        </span> -->
+                        <span class="flex items-center gap-2">
+                            <a href="https://wa.me/918291216028" target="_blank" rel="noopener noreferrer"
+                                class="text-green-500 hover:text-green-600 transition-colors flex items-center gap-2"
+                                aria-label="Chat on WhatsApp">
+                                <i class="fab fa-whatsapp text-xl"></i>
+                                +91 8291216028
+                            </a>
+                        </span>
                     </p>
                 </div>
             </div>
@@ -318,7 +355,7 @@
         document.addEventListener("DOMContentLoaded", function () {
             const currentPath = window.location.pathname.split("/").pop(); // Get the current file name
             const navLinks = document.querySelectorAll(".nav-link");
-    
+
             navLinks.forEach(link => {
                 const linkPath = link.getAttribute("href");
                 if (linkPath === currentPath || (currentPath === "" && linkPath === "index.html")) {
