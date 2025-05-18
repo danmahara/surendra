@@ -168,18 +168,21 @@
         </section>
 
         <section id="skills-navigation"
-         class="py-6 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 sticky top-16 z-30 transition-colors duration-300">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-wrap justify-center gap-4 text-sm font-medium skills-nav-links">
-            <a href="#cad-skills"
-               class="px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors active:bg-blue-200 dark:active:bg-blue-800/50">CAD Software</a>
-            <a href="#design-skills"
-               class="px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors active:bg-blue-200 dark:active:bg-blue-800/50">Design Skills</a>
-            <a href="#soft-skills"
-               class="px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors active:bg-blue-200 dark:active:bg-blue-800/50">Soft Skills</a>
-        </div>
-    </div>
-</section>
+            class="py-6 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700 sticky top-16 z-30 transition-colors duration-300">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-wrap justify-center gap-4 text-sm font-medium skills-nav-links">
+                    <a href="#cad-skills"
+                        class="px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors active:bg-blue-200 dark:active:bg-blue-800/50">CAD
+                        Software</a>
+                    <a href="#design-skills"
+                        class="px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors active:bg-blue-200 dark:active:bg-blue-800/50">Design
+                        Skills</a>
+                    <a href="#soft-skills"
+                        class="px-4 py-2 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors active:bg-blue-200 dark:active:bg-blue-800/50">Soft
+                        Skills</a>
+                </div>
+            </div>
+        </section>
 
         <section id="skills-content" class="py-16 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
@@ -726,46 +729,46 @@
         });
     </script>
 
-    
-<script>
-    // Handle click events
-    document.querySelectorAll('.skills-nav-links a').forEach(link => {
-        link.addEventListener('click', function() {
-            // Remove active classes from all skill nav links
-            document.querySelectorAll('.skills-nav-links a').forEach(el => {
-                el.classList.remove('bg-blue-200', 'dark:bg-blue-800/50');
-                el.classList.add('bg-blue-50', 'dark:bg-blue-900/30');
-            });
-            // Add active class to clicked link
-            this.classList.remove('bg-blue-50', 'dark:bg-blue-900/30');
-            this.classList.add('bg-blue-200', 'dark:bg-blue-800/50');
-        });
-    });
 
-    // Handle scroll highlighting
-    window.addEventListener('scroll', function() {
-        const sections = document.querySelectorAll('[id$="-skills"]');
-        const navLinks = document.querySelectorAll('.skills-nav-links a');
-        
-        let current = '';
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (pageYOffset >= (sectionTop - 200)) {
-                current = section.getAttribute('id');
-            }
+    <script>
+        // Handle click events
+        document.querySelectorAll('.skills-nav-links a').forEach(link => {
+            link.addEventListener('click', function () {
+                // Remove active classes from all skill nav links
+                document.querySelectorAll('.skills-nav-links a').forEach(el => {
+                    el.classList.remove('bg-blue-200', 'dark:bg-blue-800/50');
+                    el.classList.add('bg-blue-50', 'dark:bg-blue-900/30');
+                });
+                // Add active class to clicked link
+                this.classList.remove('bg-blue-50', 'dark:bg-blue-900/30');
+                this.classList.add('bg-blue-200', 'dark:bg-blue-800/50');
+            });
         });
-        
-        navLinks.forEach(link => {
-            link.classList.remove('bg-blue-200', 'dark:bg-blue-800/50');
-            link.classList.add('bg-blue-50', 'dark:bg-blue-900/30');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.remove('bg-blue-50', 'dark:bg-blue-900/30');
-                link.classList.add('bg-blue-200', 'dark:bg-blue-800/50');
-            }
+
+        // Handle scroll highlighting
+        window.addEventListener('scroll', function () {
+            const sections = document.querySelectorAll('[id$="-skills"]');
+            const navLinks = document.querySelectorAll('.skills-nav-links a');
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('bg-blue-200', 'dark:bg-blue-800/50');
+                link.classList.add('bg-blue-50', 'dark:bg-blue-900/30');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.remove('bg-blue-50', 'dark:bg-blue-900/30');
+                    link.classList.add('bg-blue-200', 'dark:bg-blue-800/50');
+                }
+            });
         });
-    });
-</script>
+    </script>
 
 </body>
 
